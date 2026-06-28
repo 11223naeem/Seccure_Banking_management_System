@@ -1,140 +1,89 @@
-# 🏦 Banking Demo System
+# 💳 Spring Security Banking System
 
-> A simple and elegant **Bank Management Web Application** built using **Spring Boot + Thymeleaf**.
+A secure banking backend application built using **Spring Boot** and **Spring Security**.
+This project demonstrates authentication, authorization, and secure API handling in a banking system.
 
 ---
 
 ## 🚀 Features
 
-✨ Create New Bank Account
-💰 Deposit Money
-💸 Withdraw Money
-📊 Check Balance
-🧾 View Account Details
-✏️ Update Account Name
-🔐 Simple Login System (Account Number based)
+* 🔐 User Authentication & Authorization (Spring Security)
+* 🏦 Banking Operations (Deposit, Withdraw, Transfer)
+* 👤 Role-based Access Control (Admin/User)
+* 🔑 OAuth2 Login (Google)
+* 📡 RESTful APIs
+* 🗄️ Database Integration (JPA/Hibernate)
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology         | Usage                    |
-| ------------------ | ------------------------ |
-| ☕ Java             | Backend Logic            |
-| 🌱 Spring Boot     | Framework                |
-| 🍃 Spring Data JPA | Database Handling        |
-| 🗄️ MySQL          | Database                 |
-| 🎨 Thymeleaf       | Frontend Template Engine |
-| 💻 HTML + CSS      | UI Design                |
+* Java
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* MySQL
+* Maven
 
 ---
 
 ## 📸 Screenshots
 
+### 🔑 Login Page
 
-### 🔐 Home Page
+![Login](images/login.png)
 
-![Login Page](images/home1.png)
-![Login Page](images/home2.png)
-
-### 🔐 Login Page
-![Login Page](images/login1.png)
-
-
-### 📊 Dashboard
+### 🏦 Dashboard
 
 ![Dashboard](images/dashboard.png)
 
-### 🧾 Account Details
+### 💸 Transactions
 
-![Details](images/details.png)
-
-### ➕ Create Account
-
-![Create](images/createnewAccount.png)
+![Transactions](images/transactions.png)
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Banking_Demo.git
+git clone https://github.com/your-username/Spring_Security-Banking-System.git
 ```
 
-### 2️⃣ Open in STS / IntelliJ
+2. Navigate to project
 
-Import as **Maven Project**
-
-### 3️⃣ Configure Database
-
-Update in `application.properties`:
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/bankdb
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
+```bash
+cd Spring_Security-Banking-System
 ```
 
-### 4️⃣ Run Application
+3. Configure database in `application.properties`
 
-Run as:
+4. Run the application
 
-```
-Spring Boot App
-```
-
-### 5️⃣ Open Browser
-
-```
-http://localhost:8080
+```bash
+mvn spring-boot:run
 ```
 
 ---
 
-## 📂 Project Structure
+## 🔐 Security Note
 
-```
-Banking_Demo/
-│── src/
-│   ├── controller/
-│   ├── model/
-│   ├── repository/
-│── templates/
-│── static/
-│── application.properties
-│── pom.xml
-```
+⚠️ Sensitive data like API keys and OAuth credentials are not included in this repository.
+Use environment variables or a separate config file.
 
 ---
 
-## 💡 Future Improvements
+## 🤝 Contributing
 
-🔒 Add Password Authentication
-📱 Make Responsive UI
-📈 Transaction History
-🌐 Deploy Online
+Feel free to fork this repo and submit pull requests.
 
 ---
 
-## 👨‍💻 Author
+## 📧 Contact
 
-**Naeem Shaikh**
-📌 Passionate Java Developer
-
----
-
-## ⭐ Support
-
-If you like this project:
-
-👉 Star ⭐ this repo
-👉 Share with others
+Naeem Shaikh
+📩 Your Email
+🔗 LinkedIn Profile
 
 ---
-
-## 📜 License
-
-This project is for learning purposes.
